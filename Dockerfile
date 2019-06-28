@@ -15,7 +15,7 @@ RUN wget --quiet https://repo.anaconda.com/archive/Anaconda2-5.3.0-Linux-x86_64.
     echo "conda activate base" >> ~/.bashrc
 
 RUN conda create -y --name renv python=2.7 r-essentials r-base scikit-learn tensorflow joblib rpy2 && \
-    conda install -c conda-forge r-mlogit
+    conda install -c conda-forge r-mlogit \
     conda activate renv
 
 RUN apt-get install -y curl grep sed dpkg && \
