@@ -1,12 +1,5 @@
 FROM debian:latest
 
-#  $ docker build . -t continuumio/anaconda:latest -t continuumio/anaconda:5.3.0 -t continuumio/anaconda2:latest -t continuumio/anaconda2:5.3.0
-#  $ docker run --rm -it continuumio/anaconda2:latest /bin/bash
-#  $ docker push continuumio/anaconda:latest
-#  $ docker push continuumio/anaconda:5.3.0
-#  $ docker push continuumio/anaconda2:latest
-#  $ docker push continuumio/anaconda2:5.3.0
-
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV PATH /opt/conda/bin:$PATH
 
