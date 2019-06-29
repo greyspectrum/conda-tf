@@ -16,7 +16,7 @@ RUN wget --quiet https://repo.anaconda.com/archive/Anaconda2-5.3.0-Linux-x86_64.
 
 RUN conda create -y --name renv python=2.7 r-essentials r-base scikit-learn tensorflow joblib rpy2 && \
     conda install -c conda-forge r-mlogit && \
-    conda activate renv
+    conda init bash && conda activate renv
 
 RUN apt-get install -y curl grep sed dpkg && \
     TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | grep -o "/v.*\"" | sed 's:^..\(.*\).$:\1:'` && \
