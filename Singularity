@@ -23,3 +23,4 @@ From:centos:7.6.1810
 
 %runscript
 	conda create -y --name renv python=2.7 r-essentials r-base scikit-learn tensorflow joblib rpy2
+	conda activate renv
