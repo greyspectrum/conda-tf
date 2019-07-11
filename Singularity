@@ -20,4 +20,6 @@ From:centos:7.6.1810
 	rm ~/anaconda.sh
 	echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
 	echo "conda activate base" >> ~/.bashrc
+
+%runscript
 	conda create -y --name renv python=2.7 r-essentials r-base scikit-learn tensorflow joblib rpy2
